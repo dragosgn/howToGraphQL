@@ -1,7 +1,7 @@
 const {MongoClient} = require('mongodb');
 
 // 1
-const MONGO_URL = 'mongodb://localhost:27017/hackernews';
+const MONGO_URL = 'mongodb://127.0.0.1:27017/hackernews';
 
 // 2
 module.exports = async () => {
