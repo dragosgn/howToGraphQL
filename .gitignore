@@ -1,8 +1,5 @@
 
-# Created by https://www.gitignore.io/api/git,node
-
-### Git ###
-*.orig
+# Created by https://www.gitignore.io/api/node
 
 ### Node ###
 # Logs
@@ -65,4 +62,4 @@ typings/
 .env
 
 
-# End of https://www.gitignore.io/api/git,node
+# End of https://www.gitignore.io/api/node
