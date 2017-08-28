@@ -3,25 +3,20 @@ const resolvers = require('./resolvers')
 
 // define types here
 const typeDefs = `
+  type Query {
+    allLinks: [Link!]!
+  }
+
   type Link {
     id: ID!
     url: String!
     description: String!
   }
 
-  type Query {
-    allLinks: [Link!]!
-  }
-
   type Mutation {
     createLink(url: String!, description: String!): Link
     createUser(name: String!, authProvider: AuthProviderSignupData!): User
     signinUser(email: AUTH_PROVIDER_EMAIL): SigninPayload!
-  }
-
-  type SigninPayload{
-    token: String
-    user: user
   }
 
   type User {
@@ -37,6 +32,11 @@ const typeDefs = `
   input AUTH_PROVIDER_EMAIL {
     email: String!
     password: String!
+  }
+
+  type SigninPayload{
+    token: String
+    user: User
   }
 `
 
